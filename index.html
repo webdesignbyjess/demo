@@ -124,6 +124,7 @@
     </header>
 
     <main class="flex-grow">
+        <!-- HOME PAGE VIEW -->
         <section id="page-home" class="page-view active">
             <!-- Hero Banner -->
             <div class="relative bg-gradient-to-r from-emerald-950 via-emerald-900 to-green-900 text-white py-16 md:py-24 overflow-hidden border-b-4 border-yellow-400">
@@ -286,17 +287,19 @@
 
                     <div class="text-center mt-10">
                         <button onclick="navigateTo('services')" class="bg-emerald-800 hover:bg-emerald-900 text-yellow-300 font-bold px-8 py-3.5 rounded-xl shadow-md transition-all">
-                            View All 8+ Plumbing Services
+                            View All Plumbing Services
                         </button>
                     </div>
                 </div>
             </section>
 
+            <!-- Quality Showcase Section (Fixed Image Path) -->
             <section class="py-12 bg-emerald-50/60 border-t border-b border-emerald-100">
                 <div class="container mx-auto px-4">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                         <div class="rounded-2xl overflow-hidden shadow-lg border-4 border-white">
-                            <img src="images/bathroomsink.jpg" alt="Bathroom Sink Installation" class="w-full h-64 sm:h-80 object-cover hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/16a34a/ffffff?text=Bathroom+Sink+Installation';">
+                            <!-- Fixed image path to bathroomsink.jpg with reliable fallback -->
+                            <img src="images/bathroomsink.jpg" alt="Bathroom Sink Installation" class="w-full h-64 sm:h-80 object-cover hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80';">
                         </div>
                         <div class="space-y-4">
                             <span class="text-red-600 font-bold text-sm tracking-wider uppercase">Our Quality Work</span>
@@ -368,6 +371,7 @@
             </section>
         </section>
 
+        <!-- SERVICES PAGE VIEW -->
         <section id="page-services" class="page-view">
             <!-- Services Page Header -->
             <div class="bg-emerald-950 text-white py-12 border-b-4 border-red-600">
@@ -433,233 +437,202 @@
                     </div>
 
                     <!-- Service 5 -->
-                    <div class="bg-white rounded-2xl border-t-4 border-emerald-600 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="images/bathroom sink.jpg" alt="Bathroom Sink Plumbing" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/600x400/16a34a/ffffff?text=Bathroom+Sink+Plumbing';">
+                    <div class="bg-white p-6 rounded-2xl border-t-4 border-emerald-600 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-sink"></i>
                         </div>
-                        <div class="p-6 flex-grow flex flex-col justify-between">
-                            <div>
-                                <div class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center text-xl mb-3">
-                                    <i class="fa-solid fa-sink"></i>
-                                </div>
-                                <h3 class="text-xl font-bold text-emerald-950 font-heading mb-2">Bathroom & Kitchen Plumbing</h3>
-                                <p class="text-slate-600 text-sm leading-relaxed mb-4">Upgrades and replacements for vanity sinks, faucets, toilets, garbage disposals, and water lines.</p>
-                            </div>
-                            <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-3">
-                                <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Sink & faucet installations</li>
-                                <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Low-flow eco fixture installs</li>
-                            </ul>
-                        </div>
+                        <h3 class="text-xl font-bold text-emerald-950 font-heading mb-2">Bathroom & Kitchen Fixtures</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Full installation and upgrade of modern bathroom sinks, faucets, garbage disposals, toilets, and custom vanities.</p>
+                        <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-3">
+                            <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Bathroom sink replacement & piping</li>
+                            <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Touchless faucet upgrades</li>
+                        </ul>
                     </div>
 
                     <!-- Service 6 -->
                     <div class="bg-white p-6 rounded-2xl border-t-4 border-amber-500 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="w-12 h-12 bg-yellow-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-4">
-                            <i class="fa-solid fa-filter flex"></i>
+                        <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-building font-bold"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-emerald-950 font-heading mb-2">Water Filtration Systems</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Clean, pure drinking water for your entire home with whole-house filtration and water softeners.</p>
+                        <h3 class="text-xl font-bold text-emerald-950 font-heading mb-2">Commercial Plumbing Services</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Dedicated commercial maintenance, grease trap cleaning, backflow testing, and heavy-duty code compliance.</p>
                         <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-3">
-                            <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Reverse Osmosis (RO) systems</li>
-                            <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Hard water softener installation</li>
+                            <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Backflow prevention certification</li>
+                            <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Scheduled commercial maintenance</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="mt-16 bg-gradient-to-br from-emerald-950 via-emerald-900 to-green-950 text-white p-8 rounded-3xl shadow-xl border-t-4 border-yellow-400">
-                    <div class="max-w-3xl mx-auto text-center">
-                        <span class="text-yellow-400 font-bold text-xs uppercase tracking-widest">Interactive Tool</span>
-                        <h2 class="text-2xl md:text-3xl font-extrabold font-heading mt-1">Instant Plumbing Cost Estimator</h2>
-                        <p class="text-emerald-100 text-sm mt-2">Get a quick ballpark estimate for common plumbing services before booking!</p>
-
-                        <div class="mt-8 bg-white/10 backdrop-blur-md p-6 rounded-2xl text-left border border-white/10 space-y-6">
-                            <div class="grid sm:grid-cols-2 gap-4">
-                                <div>
-                                    <label class="block text-xs font-semibold text-emerald-100 mb-2">Select Service Needed</label>
-                                    <select id="est-service" onchange="calculateEstimate()" class="w-full p-3 rounded-lg bg-emerald-900 text-white border border-emerald-700 outline-none text-sm">
-                                        <option value="120">Drain Snaking / Unclogging</option>
-                                        <option value="250">Faucet / Toilet Replacement</option>
-                                        <option value="350">Leak Repair & Pipe Patching</option>
-                                        <option value="850">Water Heater Maintenance / Repair</option>
-                                        <option value="1800">New Tankless Water Heater Install</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label class="block text-xs font-semibold text-emerald-100 mb-2">Property Type</label>
-                                    <select id="est-property" onchange="calculateEstimate()" class="w-full p-3 rounded-lg bg-emerald-900 text-white border border-emerald-700 outline-none text-sm">
-                                        <option value="1">Single Family Home</option>
-                                        <option value="1.2">Multi-Family / Townhouse</option>
-                                        <option value="1.4">Commercial / Retail Space</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="p-4 bg-white/10 rounded-xl flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-4">
-                                <div>
-                                    <span class="text-xs text-emerald-200 block">Estimated Price Range:</span>
-                                    <span id="est-result" class="text-3xl font-extrabold text-yellow-300 font-heading">$120 - $180</span>
-                                </div>
-                                <button onclick="navigateTo('contact')" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-md transition-all border-b-2 border-red-800">
-                                    Book This Estimate
-                                </button>
-                            </div>
-                        </div>
+                <!-- Callout Banner -->
+                <div class="mt-12 bg-emerald-900 text-white rounded-2xl p-8 flex flex-col md:flex-row justify-between items-center shadow-lg border-b-4 border-yellow-400">
+                    <div class="mb-6 md:mb-0 text-center md:text-left">
+                        <h3 class="text-2xl font-bold font-heading">Don't see your specific plumbing issue listed?</h3>
+                        <p class="text-emerald-100 text-sm mt-1">We handle custom plumbing jobs of all sizes. Give Joe a call for an immediate estimate!</p>
                     </div>
-                </div>
-
-                <div class="mt-16 max-w-3xl mx-auto">
-                    <h2 class="text-2xl font-bold text-emerald-950 font-heading text-center mb-6">Frequently Asked Questions</h2>
-                    <div class="space-y-4">
-                        <details class="bg-white rounded-xl p-4 border border-slate-200 cursor-pointer shadow-sm group">
-                            <summary class="font-bold text-emerald-950 flex justify-between items-center list-none">
-                                <span>Do you charge extra for emergency calls on weekends?</span>
-                                <i class="fa-solid fa-chevron-down text-red-600 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <p class="text-slate-600 text-sm mt-3 leading-relaxed">No! We offer transparent flat-rate pricing 24 hours a day, 7 days a week, with no hidden weekend surcharges.</p>
-                        </details>
-
-                        <details class="bg-white rounded-xl p-4 border border-slate-200 cursor-pointer shadow-sm group">
-                            <summary class="font-bold text-emerald-950 flex justify-between items-center list-none">
-                                <span>How long does it take for a plumber to arrive?</span>
-                                <i class="fa-solid fa-chevron-down text-red-600 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <p class="text-slate-600 text-sm mt-3 leading-relaxed">For emergency calls, our average response time is between 30 to 45 minutes across our local service zone.</p>
-                        </details>
-
-                        <details class="bg-white rounded-xl p-4 border border-slate-200 cursor-pointer shadow-sm group">
-                            <summary class="font-bold text-emerald-950 flex justify-between items-center list-none">
-                                <span>Are your plumbers licensed and insured?</span>
-                                <i class="fa-solid fa-chevron-down text-red-600 group-open:rotate-180 transition-transform"></i>
-                            </summary>
-                            <p class="text-slate-600 text-sm mt-3 leading-relaxed">Absolutely. Every plumber on our team is fully licensed, background-checked, and covered by $2,000,000 liability insurance.</p>
-                        </details>
-                    </div>
+                    <a href="tel:18005555637" class="bg-yellow-400 hover:bg-yellow-300 text-slate-900 px-6 py-3.5 rounded-xl font-bold shadow-md text-sm whitespace-nowrap transition-all border-b-2 border-amber-600 flex items-center space-x-2">
+                        <i class="fa-solid fa-phone text-red-600"></i>
+                        <span>Call (800) 555-JOES</span>
+                    </a>
                 </div>
             </div>
         </section>
 
+        <!-- CONTACT & QUOTE PAGE VIEW -->
         <section id="page-contact" class="page-view">
-            <!-- Contact Header -->
-            <div class="bg-emerald-950 text-white py-12 border-b-4 border-yellow-400">
+            <!-- Header Banner -->
+            <div class="bg-emerald-950 text-white py-12 border-b-4 border-red-600">
                 <div class="container mx-auto px-4 text-center">
-                    <h1 class="text-3xl md:text-4xl font-extrabold font-heading text-yellow-300">Contact & Schedule Service</h1>
-                    <p class="text-emerald-100 mt-2 max-w-xl mx-auto">Need a plumber? Book a service appointment online or call us directly for immediate dispatch.</p>
+                    <h1 class="text-3xl md:text-4xl font-extrabold font-heading text-yellow-300">Contact Us & Get a Free Quote</h1>
+                    <p class="text-emerald-100 mt-2 max-w-xl mx-auto">Have a plumbing question or need quick scheduling? Reach out to our local team today.</p>
                 </div>
             </div>
 
             <div class="container mx-auto px-4 py-12">
-                <div class="grid lg:grid-cols-12 gap-12">
-                    <!-- Contact Form Column -->
-                    <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl shadow-md border-t-8 border-red-600">
-                        <h2 class="text-2xl font-bold text-emerald-950 font-heading mb-6">Schedule Service / Get Quote</h2>
-                        <form id="full-contact-form" onsubmit="handleFullContactSubmit(event)" class="space-y-5">
-                            <div class="grid sm:grid-cols-2 gap-4">
-                                <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1">First Name *</label>
-                                    <input type="text" required placeholder="John" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 focus:border-red-600 outline-none text-sm">
-                                </div>
-                                <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Last Name *</label>
-                                    <input type="text" required placeholder="Smith" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 focus:border-red-600 outline-none text-sm">
-                                </div>
-                            </div>
+                <div class="grid lg:grid-cols-12 gap-10">
+                    <!-- Detailed Quote Form -->
+                    <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl shadow-md border-t-4 border-red-600">
+                        <h2 class="text-2xl font-bold font-heading text-emerald-950 mb-2">Schedule Service or Request Estimate</h2>
+                        <p class="text-slate-600 text-sm mb-6">Fill out the form below and Joe's dispatch team will contact you within 15 minutes.</p>
 
-                            <div class="grid sm:grid-cols-2 gap-4">
+                        <form id="contact-full-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name *</label>
+                                    <input type="text" required placeholder="John Smith" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 outline-none text-sm">
+                                </div>
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-700 mb-1">Phone Number *</label>
-                                    <input type="tel" required placeholder="(555) 123-4567" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 focus:border-red-600 outline-none text-sm">
-                                </div>
-                                <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
-                                    <input type="email" placeholder="john@example.com" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 focus:border-red-600 outline-none text-sm">
+                                    <input type="tel" required placeholder="(555) 000-0000" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 outline-none text-sm">
                                 </div>
                             </div>
 
-                            <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="grid md:grid-cols-2 gap-4">
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Preferred Date</label>
-                                    <input type="date" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 focus:border-red-600 outline-none text-sm">
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+                                    <input type="email" placeholder="john@example.com" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 outline-none text-sm">
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Urgency Level</label>
-                                    <select class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 focus:border-red-600 outline-none text-sm bg-white">
-                                        <option>Standard (Next Available)</option>
-                                        <option>Urgent (Same Day)</option>
-                                        <option>Emergency (Immediate Dispatch)</option>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Service Required *</label>
+                                    <select required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 outline-none text-sm bg-white">
+                                        <option value="">Select Service...</option>
+                                        <option>Emergency Repair</option>
+                                        <option>Drain Cleaning</option>
+                                        <option>Water Heater Service</option>
+                                        <option>Bathroom Sink & Fixture Installation</option>
+                                        <option>Pipe Repair / Leak Detection</option>
+                                        <option>Commercial Plumbing</option>
                                     </select>
                                 </div>
                             </div>
 
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1">Service Address</label>
-                                <input type="text" placeholder="123 Main St, Apt 4B" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 focus:border-red-600 outline-none text-sm">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Urgency Level</label>
+                                    <select class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 outline-none text-sm bg-white">
+                                        <option>Emergency (Immediate Arrival)</option>
+                                        <option>Same-Day Service</option>
+                                        <option>Within 2-3 Days</option>
+                                        <option>Flexible / Planning Ahead</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Preferred Date</label>
+                                    <input type="date" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 outline-none text-sm">
+                                </div>
                             </div>
 
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1">Describe the Issue</label>
-                                <textarea rows="4" placeholder="Please tell us a bit about what's going wrong..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 focus:border-red-600 outline-none text-sm"></textarea>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Service Address / Location</label>
+                                <input type="text" placeholder="123 Main St, City, State" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 outline-none text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Description of the Problem</label>
+                                <textarea rows="4" placeholder="Describe the leak, blockage, or installation project..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-red-600 outline-none text-sm"></textarea>
                             </div>
 
                             <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all text-sm uppercase tracking-wide border-b-2 border-red-800">
-                                Send Request
+                                Send Quote Request
                             </button>
                         </form>
                     </div>
 
-                    <!-- Contact Information Column -->
+                    <!-- Contact Details & Direct Info -->
                     <div class="lg:col-span-5 space-y-6">
-                        <!-- Direct Contact Card -->
-                        <div class="bg-emerald-900 text-white p-6 rounded-2xl shadow-md space-y-4 border-t-4 border-yellow-400">
-                            <h3 class="text-xl font-bold font-heading text-yellow-300">Direct Contact Info</h3>
-                            <div class="space-y-3 text-sm">
+                        <div class="bg-emerald-900 text-white p-6 rounded-2xl shadow-md border-t-4 border-yellow-400">
+                            <h3 class="text-xl font-bold font-heading mb-4 text-yellow-300">Direct Contact Details</h3>
+                            <div class="space-y-4 text-sm">
                                 <div class="flex items-start space-x-3">
-                                    <i class="fa-solid fa-phone text-yellow-400 mt-1 text-lg"></i>
+                                    <div class="bg-emerald-800 p-2 rounded-lg text-yellow-300 shrink-0">
+                                        <i class="fa-solid fa-phone text-lg"></i>
+                                    </div>
                                     <div>
-                                        <p class="text-xs text-emerald-200">Call Us Anytime</p>
-                                        <a href="tel:18005555637" class="font-bold text-lg hover:underline text-white">(800) 555-JOES</a>
+                                        <p class="text-xs text-emerald-200">24/7 Phone Dispatch</p>
+                                        <a href="tel:18005555637" class="font-bold text-base hover:text-yellow-300 transition-colors">(800) 555-JOES</a>
                                     </div>
                                 </div>
+
                                 <div class="flex items-start space-x-3">
-                                    <i class="fa-solid fa-envelope text-yellow-400 mt-1 text-lg"></i>
+                                    <div class="bg-emerald-800 p-2 rounded-lg text-yellow-300 shrink-0">
+                                        <i class="fa-solid fa-envelope text-lg"></i>
+                                    </div>
                                     <div>
-                                        <p class="text-xs text-emerald-200">Email Inquiries</p>
-                                        <p class="font-semibold text-emerald-100">service@localjoesplumbing.com</p>
+                                        <p class="text-xs text-emerald-200">Email Enquiries</p>
+                                        <p class="font-semibold">service@localjoesplumbing.com</p>
                                     </div>
                                 </div>
+
                                 <div class="flex items-start space-x-3">
-                                    <i class="fa-solid fa-location-dot text-yellow-400 mt-1 text-lg"></i>
+                                    <div class="bg-emerald-800 p-2 rounded-lg text-yellow-300 shrink-0">
+                                        <i class="fa-solid fa-map-location-dot text-lg"></i>
+                                    </div>
                                     <div>
-                                        <p class="text-xs text-emerald-200">Headquarters Address</p>
-                                        <p class="font-semibold text-emerald-100">742 Evergreen Terrace, Suite 100<br>Springfield, Metro Area</p>
+                                        <p class="text-xs text-emerald-200">Service Coverage Area</p>
+                                        <p class="font-semibold">Greater Metro Area & Surrounding Suburbs</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-3">
+                                    <div class="bg-emerald-800 p-2 rounded-lg text-yellow-300 shrink-0">
+                                        <i class="fa-solid fa-clock text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-emerald-200">Operating Hours</p>
+                                        <p class="font-semibold">Emergency Service: 24/7/365</p>
+                                        <p class="text-xs text-emerald-300 mt-0.5">Regular Hours: Mon-Sat 7am - 7pm</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Hours of Operation -->
-                        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-                            <h3 class="text-lg font-bold text-emerald-950 font-heading">Working Hours</h3>
-                            <div class="text-sm space-y-2 text-slate-600">
-                                <div class="flex justify-between border-b border-slate-100 pb-1.5">
-                                    <span>Monday - Friday:</span>
-                                    <span class="font-semibold text-emerald-950">7:00 AM - 7:00 PM</span>
+                        <!-- FAQ Box -->
+                        <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200">
+                            <h3 class="text-lg font-bold font-heading text-emerald-950 mb-3">Frequently Asked Questions</h3>
+                            <div class="space-y-3 text-xs">
+                                <div class="border-b border-slate-100 pb-2">
+                                    <button onclick="toggleFaq(1)" class="w-full text-left font-semibold text-slate-800 flex justify-between items-center">
+                                        <span>Do you charge extra for emergency calls?</span>
+                                        <i class="fa-solid fa-chevron-down text-slate-400" id="faq-icon-1"></i>
+                                    </button>
+                                    <p class="text-slate-500 mt-1 hidden" id="faq-answer-1">We present flat-rate pricing upfront before starting any emergency work, so there are never any surprise fees!</p>
                                 </div>
-                                <div class="flex justify-between border-b border-slate-100 pb-1.5">
-                                    <span>Saturday - Sunday:</span>
-                                    <span class="font-semibold text-emerald-950">8:00 AM - 5:00 PM</span>
+
+                                <div class="border-b border-slate-100 pb-2">
+                                    <button onclick="toggleFaq(2)" class="w-full text-left font-semibold text-slate-800 flex justify-between items-center">
+                                        <span>How quickly can a plumber arrive?</span>
+                                        <i class="fa-solid fa-chevron-down text-slate-400" id="faq-icon-2"></i>
+                                    </button>
+                                    <p class="text-slate-500 mt-1 hidden" id="faq-answer-2">For emergency requests, our localized technicians aim for an average arrival time of 30 to 45 minutes.</p>
                                 </div>
-                                <div class="flex justify-between text-red-600 font-bold pt-1">
-                                    <span>Emergency Line:</span>
-                                    <span>24 Hours / 7 Days</span>
+
+                                <div>
+                                    <button onclick="toggleFaq(3)" class="w-full text-left font-semibold text-slate-800 flex justify-between items-center">
+                                        <span>Are all your technicians licensed?</span>
+                                        <i class="fa-solid fa-chevron-down text-slate-400" id="faq-icon-3"></i>
+                                    </button>
+                                    <p class="text-slate-500 mt-1 hidden" id="faq-answer-3">Yes, 100% of our plumbers are fully licensed master technicians, background-checked, and insured.</p>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Service Coverage Map Box -->
-                        <div class="bg-amber-50 p-6 rounded-2xl border border-amber-200 text-center">
-                            <i class="fa-solid fa-map-location-dot text-4xl text-emerald-700 mb-2"></i>
-                            <h4 class="font-bold text-emerald-950 font-heading">Service Coverage Area</h4>
-                            <p class="text-xs text-slate-600 mt-1">Serving North, South & Central Metro Metro Areas within 35 miles radius.</p>
                         </div>
                     </div>
                 </div>
@@ -667,93 +640,109 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-emerald-950 text-slate-300 pt-12 pb-6 border-t-4 border-red-600">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-emerald-800">
-                <!-- Brand Info -->
-                <div class="space-y-3">
-                    <div class="flex items-center space-x-2 text-white">
-                        <i class="fa-solid fa-faucet-drip text-yellow-400 text-2xl"></i>
-                        <span class="text-xl font-extrabold font-heading text-yellow-300">LOCAL JOE'S</span>
+    <!-- Comprehensive Footer -->
+    <footer class="bg-emerald-950 text-white border-t-4 border-yellow-400 mt-auto">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-red-600 text-yellow-300 p-2 rounded-xl">
+                            <i class="fa-solid fa-faucet-drip text-xl"></i>
+                        </div>
+                        <span class="text-xl font-extrabold font-heading text-white">LOCAL JOE'S</span>
                     </div>
-                    <p class="text-xs leading-relaxed text-emerald-200">Providing master plumber quality, fair rates, and rapid response times to our community for over 15 years.</p>
+                    <p class="text-emerald-100 text-xs leading-relaxed">
+                        Local Joe's Plumbing provides top-rated, 24/7 emergency repair and full installation services. Dependable, honest, and background-checked master plumbers at your service.
+                    </p>
+                    <div class="flex space-x-3 text-sm pt-2">
+                        <a href="#" class="w-8 h-8 rounded-full bg-emerald-900 flex items-center justify-center text-yellow-400 hover:bg-red-600 hover:text-white transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-emerald-900 flex items-center justify-center text-yellow-400 hover:bg-red-600 hover:text-white transition-colors" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-emerald-900 flex items-center justify-center text-yellow-400 hover:bg-red-600 hover:text-white transition-colors" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+                    </div>
                 </div>
 
-                <!-- Navigation Links -->
+                <!-- Col 2: Quick Links -->
                 <div>
-                    <h4 class="text-yellow-400 font-bold text-sm mb-3 font-heading uppercase tracking-wider">Navigation</h4>
-                    <ul class="space-y-2 text-xs">
+                    <h4 class="text-yellow-400 font-bold font-heading text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs text-emerald-100">
                         <li><a href="#home" onclick="navigateTo('home')" class="hover:text-yellow-300 transition-colors">Home Page</a></li>
-                        <li><a href="#services" onclick="navigateTo('services')" class="hover:text-yellow-300 transition-colors">Plumbing Services</a></li>
-                        <li><a href="#contact" onclick="navigateTo('contact')" class="hover:text-yellow-300 transition-colors">Contact & Quote</a></li>
+                        <li><a href="#services" onclick="navigateTo('services')" class="hover:text-yellow-300 transition-colors">All Plumbing Services</a></li>
+                        <li><a href="#contact" onclick="navigateTo('contact')" class="hover:text-yellow-300 transition-colors">Get a Free Quote</a></li>
+                        <li><a href="#contact" onclick="navigateTo('contact')" class="hover:text-yellow-300 transition-colors">24/7 Emergency Dispatch</a></li>
                     </ul>
                 </div>
 
-                <!-- Popular Services -->
+                <!-- Col 3: Services List -->
                 <div>
-                    <h4 class="text-yellow-400 font-bold text-sm mb-3 font-heading uppercase tracking-wider">Services</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#services" onclick="navigateTo('services')" class="hover:text-yellow-300 transition-colors">Drain Unclogging</a></li>
-                        <li><a href="#services" onclick="navigateTo('services')" class="hover:text-yellow-300 transition-colors">Water Heater Repair</a></li>
-                        <li><a href="#services" onclick="navigateTo('services')" class="hover:text-yellow-300 transition-colors">Burst Pipe Emergency</a></li>
-                        <li><a href="#services" onclick="navigateTo('services')" class="hover:text-yellow-300 transition-colors">Slab Leak Repair</a></li>
+                    <h4 class="text-yellow-400 font-bold font-heading text-sm uppercase tracking-wider mb-4">Our Services</h4>
+                    <ul class="space-y-2 text-xs text-emerald-100">
+                        <li><i class="fa-solid fa-angle-right text-red-500 mr-1"></i> Emergency Pipe Leak Repair</li>
+                        <li><i class="fa-solid fa-angle-right text-red-500 mr-1"></i> Drain Cleaning & Jetting</li>
+                        <li><i class="fa-solid fa-angle-right text-red-500 mr-1"></i> Water Heater Installation</li>
+                        <li><i class="fa-solid fa-angle-right text-red-500 mr-1"></i> Bathroom Sink & Faucet Upgrades</li>
+                        <li><i class="fa-solid fa-angle-right text-red-500 mr-1"></i> Commercial Plumbing Maintenance</li>
                     </ul>
                 </div>
 
-                <!-- Contact Footer Call -->
+                <!-- Col 4: License & Guarantee -->
                 <div>
-                    <h4 class="text-yellow-400 font-bold text-sm mb-3 font-heading uppercase tracking-wider">24/7 Dispatch</h4>
-                    <p class="text-xs mb-3 text-emerald-200">Got an urgent pipe burst or flood? Call our master plumber directly.</p>
-                    <a href="tel:18005555637" class="inline-block bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-colors border-b-2 border-red-800">
-                        <i class="fa-solid fa-phone mr-1.5 text-yellow-300"></i> (800) 555-JOES
-                    </a>
+                    <h4 class="text-yellow-400 font-bold font-heading text-sm uppercase tracking-wider mb-4">License & Guarantee</h4>
+                    <p class="text-xs text-emerald-100 leading-relaxed mb-3">
+                        Fully licensed, bonded, and insured state master plumbing contractors. License #PLM-88492.
+                    </p>
+                    <div class="bg-emerald-900/80 p-3 rounded-xl border border-emerald-700/50 text-xs">
+                        <p class="font-bold text-yellow-300 mb-1"><i class="fa-solid fa-shield-check text-emerald-400 mr-1"></i> 100% Satisfaction Guarantee</p>
+                        <p class="text-emerald-200 text-[11px]">All repair parts and labor come backed by our 1-year full coverage warranty.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="pt-6 text-center text-xs text-emerald-400 flex flex-col sm:flex-row justify-between items-center gap-2">
-                <p>&copy; <span id="year-span"></span> Local Joe's Plumbing & Heating Co. All rights reserved.</p>
-                <p>Designed for easy single-file deployment on GitHub & Vercel.</p>
+            <div class="border-t border-emerald-900 mt-10 pt-6 text-center text-xs text-emerald-400 flex flex-col sm:flex-row justify-between items-center">
+                <p>&copy; 2026 Local Joe's Plumbing & Heating. All rights reserved.</p>
+                <div class="flex space-x-4 mt-2 sm:mt-0 text-emerald-300">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <span>&bull;</span>
+                    <a href="#" class="hover:underline">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Success Modal Box -->
-    <div id="modal-backdrop" class="fixed inset-0 bg-emerald-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-md w-full p-6 text-center shadow-2xl animate-fade-in border-t-8 border-red-600">
-            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+    <!-- Notification Modal Toast -->
+    <div id="modal-toast" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm hidden items-center justify-center z-50 px-4">
+        <div class="bg-white rounded-2xl p-6 max-w-sm w-full shadow-2xl text-center border-t-8 border-emerald-600 animate-bounce-short">
+            <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-            <h3 class="text-2xl font-bold text-emerald-950 font-heading">Request Received!</h3>
-            <p class="text-slate-600 text-sm mt-2">Thank you! Joe or one of our senior technicians will call your phone number back within 15 minutes.</p>
-            <button onclick="closeModal()" class="mt-6 w-full bg-red-600 text-white font-bold py-3 rounded-xl hover:bg-red-700 transition-colors">
-                Close Window
+            <h3 class="text-xl font-bold text-emerald-950 font-heading mb-1" id="modal-title">Request Received!</h3>
+            <p class="text-slate-600 text-xs leading-relaxed mb-5" id="modal-message">Thank you! Joe's dispatch team will call you within 15 minutes.</p>
+            <button onclick="closeModal()" class="w-full bg-emerald-800 hover:bg-emerald-900 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+                Close
             </button>
         </div>
     </div>
 
     <script>
-        // Set dynamic copyright year
-        document.getElementById('year-span').innerText = new Date().getFullYear();
-
-        // Single Page Navigation Function
+        // SPA Page Navigation
         function navigateTo(pageId) {
             // Hide all pages
             const pages = document.querySelectorAll('.page-view');
-            pages.forEach(page => page.classList.remove('active'));
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
 
-            // Show targeted page
+            // Show target page
             const targetPage = document.getElementById('page-' + pageId);
             if (targetPage) {
                 targetPage.classList.add('active');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
 
-            // Update Navigation Active State
-            const navButtons = document.querySelectorAll('.nav-btn');
-            navButtons.forEach(btn => {
-                btn.classList.remove('text-red-600', 'font-bold', 'border-red-600');
-                btn.classList.add('text-slate-600', 'border-transparent');
+            // Update Nav link active states
+            const navLinks = document.querySelectorAll('.nav-btn');
+            navLinks.forEach(link => {
+                link.classList.remove('text-red-600', 'font-bold', 'border-red-600');
+                link.classList.add('text-slate-600', 'border-transparent');
             });
 
             const activeNav = document.getElementById('nav-' + pageId);
@@ -761,58 +750,85 @@
                 activeNav.classList.remove('text-slate-600', 'border-transparent');
                 activeNav.classList.add('text-red-600', 'font-bold', 'border-red-600');
             }
-        }
 
-        // Handle URL Hash Navigation
-        function handleHashChange() {
-            const hash = window.location.hash.replace('#', '');
-            if (['home', 'services', 'contact'].includes(hash)) {
-                navigateTo(hash);
+            // Scroll to top smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Update URL hash without forcing jump
+            if (history.pushState) {
+                history.pushState(null, null, '#' + pageId);
             } else {
-                navigateTo('home');
+                location.hash = '#' + pageId;
             }
         }
 
-        window.addEventListener('hashchange', handleHashChange);
-        window.addEventListener('load', handleHashChange);
-
-        // Mobile Menu Toggle
+        // Toggle Mobile Navigation Menu
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
         }
 
-        // Estimator Calculation
-        function calculateEstimate() {
-            const basePrice = parseFloat(document.getElementById('est-service').value);
-            const multiplier = parseFloat(document.getElementById('est-property').value);
-            
-            const min = Math.round(basePrice * multiplier);
-            const max = Math.round(min * 1.35);
-
-            document.getElementById('est-result').innerText = `$${min} - $${max}`;
+        // Accordion functionality for FAQ
+        function toggleFaq(id) {
+            const answer = document.getElementById('faq-answer-' + id);
+            const icon = document.getElementById('faq-icon-' + id);
+            if (answer) {
+                if (answer.classList.contains('hidden')) {
+                    answer.classList.remove('hidden');
+                    if(icon) icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                } else {
+                    answer.classList.add('hidden');
+                    if(icon) icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                }
+            }
         }
 
-        // Form Submission Handlers
-        function handleQuickSubmit(e) {
-            e.preventDefault();
-            showModal();
-            e.target.reset();
+        // Quick Form Handler
+        function handleQuickSubmit(event) {
+            event.preventDefault();
+            showModal('Service Request Received!', 'Thanks! Joe\'s plumbing team will contact you within 15 minutes.');
+            event.target.reset();
         }
 
-        function handleFullContactSubmit(e) {
-            e.preventDefault();
-            showModal();
-            e.target.reset();
+        // Full Contact Form Handler
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            showModal('Quote Request Submitted!', 'Thank you for reaching out to Local Joe\'s Plumbing. We will review your request and confirm your appointment shortly.');
+            event.target.reset();
         }
 
-        function showModal() {
-            document.getElementById('modal-backdrop').classList.remove('hidden');
+        // Show Modal Message
+        function showModal(title, message) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-message').innerText = message;
+            const modal = document.getElementById('modal-toast');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
         }
 
+        // Close Modal Message
         function closeModal() {
-            document.getElementById('modal-backdrop').classList.add('hidden');
+            const modal = document.getElementById('modal-toast');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
         }
+
+        // Handle initial load based on URL hash
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash && (hash === 'home' || hash === 'services' || hash === 'contact')) {
+                navigateTo(hash);
+            }
+        });
     </script>
 </body>
 </html>
